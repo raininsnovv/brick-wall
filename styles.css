@@ -1,0 +1,89 @@
+body {
+  background-color: #b0cce5;
+  color: chocolate;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+#brick-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#brick-form label {
+  margin: 10px 0 5px;
+}
+
+#brick-form input {
+  width: 50px;
+  font-size: large;
+  font-weight: 500;
+  color: chocolate;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #b0cce5;
+  border-radius: 5px;
+}
+
+#brick-form button {
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  background: chocolate;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 85px;
+  height: 30px;
+}
+
+#brick-form button:hover {
+  transform: scale(1.3);
+}
+
+#wall-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: min-content;
+}
+#brick-wall {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin-left: -41px;
+  margin-right: -41px;
+}
+.row {
+  display: flex;
+}
+
+.brick {
+  width: 80px;
+  height: 35px;
+  margin: 1px;
+}
+
+#color-count {
+  margin-bottom: 20px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

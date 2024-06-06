@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brick wall</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        КИ<span style="text-decoration: line-through; color: #9bb2c7">тайская</span></span>РПИЧНАЯ
+        СТЕНА
+      </h1>
+      <form id="brick-form">
+        <label for="rows"
+          >Укажите количество рядов кирпичной кладки (Х)</label
+        >
+        <input id="rows" type="number" min="3" name="rows" required />
+
+        <label for="columns">Укажите количество кирпичей в ряду (Y)</label>
+        <input id="columns" type="number" min="3" name="columns" required />
+
+        <label for="colors"
+          >Укажите количество цветов для раскраски кирпичей (N)
+        </label>
+        <input id="colors" type="number" min="1" name="colors" required />
+
+        <button type="submit">!</button>
+      </form>
+      <div id ="wall-wrapper">
+      <div id="brick-wall"></div>
+      </div>
+      <div id="color-count">тут мы будем видеть кол-во кирпичей каждого цвета</div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
